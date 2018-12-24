@@ -35,7 +35,7 @@ $ python3 link_analysis.py [-h]
   依照上面的公式定義，對每個點與其它所有的計算相似度，給定初始值後，用一個二維矩陣來做計算，對每個點迭代計算與其它所有不同點的結果，迭代到與上次誤差不大則結束迭代。
 
 ## Result analysis and discussion
-### 以下呈現 graph 1~6的結果
+### 以下呈現 graph 1~6及IBM的data的directed、bidirected結果
 ### graph_1.txt 
 * HITS</br>
 ![](https://i.imgur.com/nt78xdu.png)
@@ -105,6 +105,28 @@ $ python3 link_analysis.py [-h]
 * SimRank</br>
   部分結果</br>
   ![](https://i.imgur.com/iMD1adf.png)
+  
+  
+### ibmData_directed.txt
+* HITS</br>
+  部分結果</br>
+  ![](https://i.imgur.com/cmJtZTH.png)</br>
+  ![](https://i.imgur.com/4nPfCo2.png)</br>
+
+* PageRank </br>
+  部分結果</br>
+  ![](https://i.imgur.com/pSE8jhu.png)
+
+### ibmData_bidirected.txt
+* HITS</br>
+  部分結果</br>
+  ![](https://i.imgur.com/Okc1Baf.png)</br>
+  ![](https://i.imgur.com/f8I7A7Y.png)</br>
+
+* PageRank </br>
+  部分結果</br>
+  ![](https://i.imgur.com/aKPaSKb.png)
+
 
   
 ### discussion
@@ -124,6 +146,8 @@ $ python3 link_analysis.py [-h]
   | graph_4 | 0m0.093s |
   | graph_5 | 0m0.129s |
   | graph_6 | 0m0.813s |
+  | ibmData_directed | 0m5.744s |
+  | ibmData_bidirected | 0m5.446s |
 
 ### PageRank 
 * time
@@ -136,7 +160,8 @@ $ python3 link_analysis.py [-h]
   | graph_4 | 0m0.091s |
   | graph_5 | 0m0.157s |
   | graph_6 | 0m0.322s |
-
+  | ibmData_directed | 0m1.942s |
+  | ibmData_bidirected | 2m19.967s |
 
 ### SimRank
 * time
@@ -151,9 +176,8 @@ $ python3 link_analysis.py [-h]
   | graph_6 | 0m39.897s|
 
 
-
 ### analysis
-* 上面的執行時間結果可以觀察到，在圖1~3這種很小的圖時間差距不大，但到圖4這種開始有點複雜度的圖效能差距就慢慢出來了，而圖5、6則可以看到HITS的時間明顯少於其他兩種演算法，PageRank則次之，而SimRank在點數多圖複雜時會很明顯的要花非常多時間。
+* 上面的執行時間結果可以觀察到，在圖1~4這種很小的圖時間差距不大觀察不出什麼，而5、6和ibmData_directed及ibmData_bidirected開始，就會因為點數的不同和link的特性而有不同的執行時間，而SimRank時間複雜度較高，在點數多圖複雜時，時間差距就會很明顯。
 
 
 ## Discussion 
