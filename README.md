@@ -115,37 +115,40 @@ $ python3 link_analysis.py [-h]
 ## Computation performance analysis
 ### HITS
 * time
-  |graph  |time    |
-  |---    | ---    |
-  |graph_1|0m0.091s|
-  |graph_2|0m0.092s|
-  |graph_3|0m0.091s|
-  |graph_4|0m0.093s|
-  |graph_5|0m0.129s|
-  |graph_6|0m0.813s|
+
+  | graph   | time     |
+  | ---     |  ---     |
+  | graph_1 | 0m0.091s |
+  | graph_2 | 0m0.092s |
+  | graph_3 | 0m0.091s |
+  | graph_4 | 0m0.093s |
+  | graph_5 | 0m0.129s |
+  | graph_6 | 0m0.813s |
 
 ### PageRank 
 * time
-  |graph  |time    |
-  |---    | ---    |
-  |graph_1|0m0.090s|
-  |graph_2|0m0.091s|
-  |graph_3|0m0.090s|
-  |graph_4|0m0.091s|
-  |graph_5|0m0.157s|
-  |graph_6|0m0.322s|
+
+  | graph   | time     |
+  | ---     |  ---     |
+  | graph_1 | 0m0.090s |
+  | graph_2 | 0m0.091s |
+  | graph_3 | 0m0.090s |
+  | graph_4 | 0m0.091s |
+  | graph_5 | 0m0.157s |
+  | graph_6 | 0m0.322s |
 
 
 ### SimRank
 * time
-  |graph  |time    |
-  |---    | ---    |
-  |graph_1|0m0.092s|
-  |graph_2|0m0.092s|
-  |graph_3|0m0.092s|
-  |graph_4|0m0.096s|
-  |graph_5|0m9.897s|
-  |graph_6|0m39.897s|
+
+  | graph   | time     | 
+  | ---     |  ---     |
+  | graph_1 | 0m0.092s |
+  | graph_2 | 0m0.092s |
+  | graph_3 | 0m0.092s |
+  | graph_4 | 0m0.096s |
+  | graph_5 | 0m9.897s |
+  | graph_6 | 0m39.897s|
 
 
 
